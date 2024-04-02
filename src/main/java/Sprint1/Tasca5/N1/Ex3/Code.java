@@ -9,7 +9,7 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Scanner;
 
-public class Code{
+public class Code {
     public static void obtenerContenidoDirectorio(String rutaRelativa, String archivoSalida) throws IOException {
         Path directorio = Paths.get(rutaRelativa);
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(archivoSalida))) {
@@ -34,21 +34,10 @@ public class Code{
         }
     }
 
-    public static String pregRutaRelativa(){
+    public static String pregRutaRelativa() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Introdueix la ruta que vols visualitzar: ");
         String rutaRelativa = sc.nextLine();
         return rutaRelativa;
-    }
-
-
-    public static void mostrarContenidoArchivo(String rutaArchivo) throws IOException {
-        try (BufferedReader reader = new BufferedReader(new FileReader(rutaArchivo))) {
-            String linea;
-            System.out.println("Contenido del archivo " + rutaArchivo + ":");
-            while ((linea = reader.readLine()) != null) {
-                System.out.println(linea);
-            }
-        }
     }
 }

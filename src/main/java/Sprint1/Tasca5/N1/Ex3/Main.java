@@ -17,11 +17,5 @@ public class Main {
             System.err.println("Error al tractar d'obtindre el contingut del directori: " + e.getMessage());
         }
 
-        try {
-            Code.mostrarContenidoArchivo(pregRutaRelativa());
-        } catch (IOException e) {
-            System.err.println("Error al llegir l'arxiu: " + e.getMessage());
-        }
-
     }
 }
