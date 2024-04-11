@@ -17,5 +17,14 @@ public class Main {
 
         missatge = "Digues un número amb dues xifres decimals(Double): ";
         System.out.println(Entrada.llegirDouble(missatge));
+
+        missatge = "Digues un carácter(char): ";
+        System.out.println(Entrada.llegirChar(missatge));
+
+        missatge = "Digues una frase(String): ";
+        System.out.println(Entrada.llegirString(missatge));
+
+        missatge = "Digues si o no: ";
+        System.out.println(Entrada.llegirSiNo(missatge));
     }
 }
