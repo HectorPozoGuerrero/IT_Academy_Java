@@ -12,6 +12,7 @@ public class Vent extends Instrument {
         System.out.println("Està sonant un instrument de vent");
     }
 
+    @Override
     public String toString(){
         return "El nom de l'instruments és " + super.getNomInst() +
                 ", té un preu de " + super.getPreuInst() +
