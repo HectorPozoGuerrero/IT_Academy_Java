@@ -2,12 +2,11 @@ package Sprint1.Tasca1.N1.Ex2;
 
 public class Car {
     private static final String BRAND = "Audi";
-    private static String model;
+    private static String model = "A3";
     private final int POWER;
 
 
-    public Car(String model, int POWER) {
-        this.model = model;
+    public Car(int POWER) {
         this.POWER = POWER;
     }
 
