@@ -18,7 +18,7 @@ public class Car {
     public int getPOWER() {
         return this.POWER;
     }
-    public String getBrand(){ return this.BRAND; }
+    public String getBrand(){ return BRAND; }
     public static String getModel() {
         return model;
     }
@@ -31,8 +31,8 @@ public class Car {
     }
 
     public String toString(){
-        return "El cotxe es un " + this.BRAND + ", model " +
-                this.model + " y disposa de " + this.POWER +
+        return "El cotxe es un " + BRAND + ", model " +
+                model + " y disposa de " + this.POWER +
                 "CVs.";
     }
 

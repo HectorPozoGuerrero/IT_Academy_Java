@@ -32,6 +32,7 @@ public class Restaurant {
     public int hashCode() {
         return Objects.hash(nom, puntuacio);
     }
+    @Override
     public String toString(){
         return this.nom + " -- " + this.puntuacio;
     }
